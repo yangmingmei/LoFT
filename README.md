@@ -3,16 +3,18 @@
 LoFT presents a Low-order modelling of floating offshore wind turbines(FOWTs) for training. The main purposes of LoFT are threefold:
 1. Enable parallel and fast simulations of numerous FOWTs
 2. Faciliate the training of deep reinforcement learning in FOWTs
-3. Present a fair comparison of different control-oriented modelling of FOWTs
+3. Present a fair comparison between different control-oriented modelling of FOWTs and fUll-order modelling in OpenFast
 
 N.B.: A more stable and complete version will be released after the paper is accepted.
 
 ## Brief Summary
-The frequency support capability of floating offshore wind turbines varies with platform motions. Additionally, the floating platform may experience **_more significant pitch motion_** during the system frequency response. In response to these two issues, a frequency response control strategy that takes platform motions into account is proposed. This strategy **_ajusts droop according to floating platform motions_**,power reserve and rotor kinetics. Specifically, for above rated wind conditions, a **_temporary individual pitch control_** strategy is designed for mitigating the significant pitch motion of the floating platform during the frequency response process. 
+The basic motivation behind LoFT is to provide a tool for the application of deep reinforcement learning in floating offshore wind farms.  To do this, the simulations should fast enough, which enables an agent to interact with the environment for over millions of times. As a result, LoFT reservs the degrees of freedom that notabley influence the power output of FOWTs and put efficiency in the first place. Moreover, LoFT supports **_domain randomization_** , which is considered as the key source of robustness of deep reinforcement learing to tranfer to real world. In the future development, we will try to develop the coupling between platform motions and wake effect and present a fair comparison between different control-oriented modelling of FOWTs
 
 ## Quick Use
 run Example1.m to simulate 5 FOWTs.
+
 run Example2.m to simulate 70 FOWTs.
+
 ## Project organization
 - PG = project-generated
 - HW = human-writable
