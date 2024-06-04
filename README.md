@@ -8,7 +8,7 @@ LoFT presents a Low-order modelling of floating offshore wind turbines(FOWTs) fo
 N.B.: A more stable and complete version will be released after the paper is accepted.
 
 ## Brief Summary
-The basic motivation behind LoFT is to provide a tool for the application of deep reinforcement learning in floating offshore wind farms.  To do this, the simulations should fast enough, which enables an agent to interact with the environment for over millions of times. As a result, LoFT reservs the degrees of freedom that notabley influence the power output of FOWTs and put efficiency in the first place. Moreover, LoFT supports **_domain randomization_** , which is considered as the key source of robustness of deep reinforcement learing to tranfer to real world. In the future development, we will try to develop the coupling between platform motions and wake effect and present a fair comparison between different control-oriented modelling of FOWTs
+The basic motivation behind LoFT is to provide a tool for the application of deep reinforcement learning in floating offshore wind farms.  To do this, the simulation environment has be fast enough to interact with the agent for over millions of times. As a result, LoFT reservs the degrees of freedom that notabley influence the power output of FOWTs and put efficiency in the first place. Moreover, LoFT supports **_domain randomization_** , which is considered as the key source of robustness of deep reinforcement learing to tranfer to real world. In the future development, we will try to develop the coupling between platform motions and wake effect and present a fair comparison between different control-oriented modelling of FOWTs
 
 ## Quick Use
 run Example1.m to simulate 5 FOWTs.
