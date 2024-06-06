@@ -13,9 +13,11 @@ N.B.: The validation code of the trained agent on OpenFast will be released afte
   Moreover, LoFT supports **_domain randomization_** , which is considered as the key source of robustness of deep reinforcement learing to tranfer to the real world. In the future development, we will try to develop the coupling between platform motions and wake effect and present a fair comparison between different control-oriented modelling of FOWTs
 
 ## Quick Use
-run Example1.m to simulate 5 FOWTs.
+run 'Example1.m' to change environment settings and simulate 5 FOWTs.
 
-run Example2.m to simulate 70 FOWTs.
+run 'Example2.m' to simulate 70 FOWTs.
+
+run 'Compare.m' in 'validation' filefolder to see the validation of LoFT against OpenFast.
 
 ## Project organization
 - PG = project-generated
