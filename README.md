@@ -1,4 +1,4 @@
-# LoFT
+# LoFT alpha release
 
   LoFT presents a Low-order modelling of floating offshore wind turbines(FOWTs) for training. The main purposes are threefold:
 1. Enable parallel and fast simulations of numerous FOWTs
@@ -15,7 +15,7 @@ N.B.: The validation code of the trained agent on OpenFast will be released afte
 ## Quick Use
 run 'Example1.m' to change environment settings and simulate 5 FOWTs.
 
-run 'Example2.m' to simulate 70 FOWTs.
+run 'Example2.m' to simulate 70 FOWTs considering wake effect.
 
 run 'Compare.m' in 'validation' filefolder to see the validation of LoFT against OpenFast.
 
@@ -43,6 +43,7 @@ run 'Compare.m' in 'validation' filefolder to see the validation of LoFT against
 ```
 ## Credit
 We request the to cite 
+Coordinated control of floating wind turbines for primary frequency response, submitted to IEEE transactions on sustainable energy.
 
 ## License
 This project is licensed under the terms of the [MIT License](/LICENSE.md)
