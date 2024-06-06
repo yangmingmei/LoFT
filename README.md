@@ -5,7 +5,7 @@
 2. Faciliate the training of deep reinforcement learning in FOWTs
 3. Present a fair comparison between different control-oriented modelling of FOWTs and  OpenFast
 
-N.B.: The validation code on OpenFast will be released after the paper is accepted.
+N.B.: The validation code of the trained agent on OpenFast will be released after the paper is accepted.
 
 ## Brief Summary
   The basic motivation behind LoFT is to provide a tool to facliate the application of deep reinforcement learning in floating offshore wind farms.  To do this, the simulation environment has be fast enough to interact with the agent for over millions of times during training. As a result, LoFT put efficiency in the first place reservs the degrees of freedom that notabley influence the power output of FOWTs. 
