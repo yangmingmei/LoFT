@@ -1,4 +1,4 @@
-# LoFT alpha release
+# LoFT v 0.1
 
   LoFT presents a Low-order modelling of floating offshore wind turbines(FOWTs) for training. The main purposes are threefold:
 1. Enable parallel and fast simulations of numerous FOWTs
