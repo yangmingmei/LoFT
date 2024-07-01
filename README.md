@@ -3,7 +3,7 @@
   LoFT presents a Low-order modelling of floating offshore wind turbines(FOWTs) for training. The main purposes are threefold:
 1. Enable parallel and fast simulations of numerous FOWTs
 2. Faciliate the application of deep reinforcement learning in FOWTs
-3. Present a fair comparison between different control-oriented modelling of FOWTs and  OpenFast
+3. Present a fair comparison between different control-oriented modelling of FOWTs and  OpenFast (to be commisioned)
 
 N.B.: The validation code of the trained agent on OpenFast will be released after the paper is accepted.
 
