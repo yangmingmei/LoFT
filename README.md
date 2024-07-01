@@ -42,9 +42,9 @@ run 'Compare.m'  to see the validation of LoFT against OpenFast.
 
 ```
 ## Credit
-We request the to cite 
+If you consider this repository helpful for you research, please cite: 
 
-Deep Reinforcement Learning with Domain Randomization for Primary Frequency Response of Floating Offshore Wind Turbines, submitted to IEEE transactions on sustainable energy.
+"Deep Reinforcement Learning with Domain Randomization for Primary Frequency Response of Floating Offshore Wind Turbines", submitted to IEEE transactions on sustainable energy.
 
 ## License
 This project is licensed under the terms of the [Apache License Version 2.0](/LICENSE.md)
