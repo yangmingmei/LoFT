@@ -9,11 +9,15 @@
 ## Brief Summary
    The basic motivation behind LoFT is to provide a tool to facliate the application of deep reinforcement learning in floating offshore wind farms. To achieve this, we need to put computational efficiency in the first place since deep reinforcement learning needs to interact with the environment for over millions of times. As a result, LoFT  only reservs the degrees of freedom that notabley influence the power output of FOWTs. Moreover, LoFT supports **_domain randomization_** , which is considered as the key source of robustness of a deep reinforcement learing scheme to tranfer from simulations to the real world, as shown in Fig.1.
 
+ <div align=center>
+     <img src="Results/Figure/wavefield.gif" height="220"/> <img src="Results/Figure/windfield.gif" height="220"/> 
+</div>
+ <div align=center>
+      Fig.1 Illustration of domain randomization in a floating wind farm, with changing wind field and wave field
+</div>
 
-![windfield](Results/Figure/wavefield.gif)
-![windfield](Results/Figure/windfield.gif)
-  
-   In the future development, the coupling between platform motions and wake effect will be considered.
+<br/>
+In the future development, the coupling between platform motions and wake effect will be considered.
 
 ## Quick Use
 run 'Example1.m' to change environment settings and simulate 5 FOWTs.
@@ -45,9 +49,7 @@ run 'Compare.m'  to see the validation of LoFT against OpenFast.
 ```
 ## Credit
 
-"Primary Frequency Response of Floating Offshore Wind Turbines via Deep Reinforcement Learning and Domain Randomization", submitted to IEEE Transactions on Sustainable Energy. Mingyang Mei, Peng Kou,  Zhihao Zhang, Yuanhang Zhang, Zhihang Xue, Deliang Liang
-
-(Corresponding author: [Peng Kou](https://gr.xjtu.edu.cn/en/web/koupeng))
+"Primary Frequency Response of Floating Offshore Wind Turbines via Deep Reinforcement Learning and Domain Randomization", submitted to IEEE Transactions on Sustainable Energy. Mingyang Mei, Peng Kou,  Zhihao Zhang, Yuanhang Zhang, Zhihang Xue, Deliang Liang (Corresponding author: [Peng Kou](https://gr.xjtu.edu.cn/en/web/koupeng))
 
 ## License
 This project is licensed under the terms of the [Apache License Version 2.0](/LICENSE.md)
