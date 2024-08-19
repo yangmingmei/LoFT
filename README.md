@@ -45,7 +45,9 @@ run 'Compare.m'  to see the validation of LoFT against OpenFast.
 ```
 ## Credit
 
-"Primary Frequency Response of Floating Offshore Wind Turbines via Deep Reinforcement Learning and Domain Randomization", submitted to IEEE Transactions on Sustainable Energy.  Supervised by [Professor Peng Kou](https://gr.xjtu.edu.cn/en/web/koupeng), Xi'an Jiaotong Univercity
+"Primary Frequency Response of Floating Offshore Wind Turbines via Deep Reinforcement Learning and Domain Randomization", submitted to IEEE Transactions on Sustainable Energy. Mingyang Mei, Peng Kou,  Zhihao Zhang, Yuanhang Zhang, Zhihang Xue, Deliang Liang
+
+(Corresponding author: [Peng Kou](https://gr.xjtu.edu.cn/en/web/koupeng))
 
 ## License
 This project is licensed under the terms of the [Apache License Version 2.0](/LICENSE.md)
