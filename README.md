@@ -25,19 +25,18 @@ run 'Compare.m'  to see the validation of LoFT against OpenFast.
 ```
 .
 ├── .gitignore
-├── CITATION.md
 ├── LICENSE.md
 ├── README.md
-├── bin                         <- Compiled and external code, ignored by git (PG)
-│   ├── external/Casadi         <- When running simulations on a cluster, place compiled CasADi code with IPOPT solver here. (RO)
-|   └── model_Favoreel1999.m    
-├── data                        <- All project data, ignored by git
-│   ├── processed               <- The final, canonical data sets for modeling. (PG)
-│   ├── raw                     <- The original, immutable data dump. (RO)
-│   └── temp                    <- Intermediate data that has been transformed. (PG)
-├── results         
-│   └── figures                 <- Figures for the manuscript or reports (PG)
-└── src                         <- Source code for this project (HW)
+├── Function                    <- All project functions (HW)  
+├── Param                       <- All project parameters
+│   ├── IEA 15 MW               <- The final, canonical data sets for modeling. (RO)
+│   ├── IEA 22 MW               <- The original, immutable data dump. (RO)
+├── Simulink                    <- Simulink models (HW)
+├── Results         
+│   └── figures                 <- Figures for the manuscript or documentation (PG)
+├── TurboPark                   <- Averaged wind field modelling (HW)
+├── Validation                  <- Validation against OpenFast (PG) 
+
 
 ```
 ## Credit
