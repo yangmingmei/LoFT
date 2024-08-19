@@ -30,6 +30,8 @@ run '[Example2.m](Example2.m)' to simulate 70 FOWTs considering wake effect and 
 
 run '[Compare.m](Validation/Compare.m)'  to see the validation of LoFT against OpenFast.
 
+view '[Documentation.docx](Documentation.docx)' for more details.
+
 ## Project organization
 - PG = project-generated
 - HW = human-writable
@@ -56,4 +58,4 @@ run '[Compare.m](Validation/Compare.m)'  to see the validation of LoFT against O
 "Primary Frequency Response of Floating Offshore Wind Turbines via Deep Reinforcement Learning and Domain Randomization", submitted to IEEE Transactions on Sustainable Energy. [Mingyang Mei](https://scholar.google.com/citations?user=jpXmO2UAAAAJ&hl=zh-CN), Peng Kou,  [Zhihao Zhang](https://scholar.google.com/citations?hl=zh-CN&user=Qfr4gA4AAAAJ), [Yuanhang Zhang](https://scholar.google.com/citations?hl=zh-CN&user=Qfr4gA4AAAAJ), Zhihang Xue, Deliang Liang (Corresponding author: [Peng Kou](https://gr.xjtu.edu.cn/en/web/koupeng))
 
 ## License
-This project is licensed under the terms of the [Apache License Version 2.0](LICENSE.md)
+This project is licensed under the terms of the [Apache License Version 2.0](LICENSE.txt)
