@@ -30,7 +30,7 @@ run '[Example2.m](Example2.m)' to simulate 70 FOWTs considering wake effect and 
 
 run '[Compare.m](Validation/Compare.m)'  to see the validation of LoFT against OpenFast.
 
-view '[Documentation.docx](Documentation.docx)' for more details.
+Please refer to '[Documentation.docx](Documentation.docx)' for more details.
 
 ## Project organization
 - PG = project-generated
