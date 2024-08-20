@@ -30,7 +30,7 @@ run '[Example1.m](Example1.m)' to change environment settings and simulate 5 FOW
 
 run '[Example2.m](Example2.m)' to simulate 70 FOWTs considering wake effect and wave field coherence.
 
-run '[Compare.m](Validation/Compare.m)'  to see the validation of LoFT against OpenFast.
+run '[Compare.m](Validation/compare.m)'  to see the validation of LoFT against OpenFast.
 
 Please refer to '[Documentation.docx](Documentation.docx)' for more details.
 
