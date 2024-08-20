@@ -45,8 +45,8 @@ Please refer to '[Documentation.docx](Documentation.docx)' for more details.
 ├── README.md
 ├── Function                    <- All project functions (HW)  
 ├── Param                       <- All project parameters
-│   ├── IEA 15 MW               <- The final, canonical data sets for modeling. (RO)
-│   ├── IEA 22 MW               <- The original, immutable data dump. (RO)
+│   ├── IEA 15 MW               <- IEA 15 MW semi-submersible FOWT parameters. (RO)
+│   ├── IEA 22 MW               <- IEA 22 MW semi-submersible FOWT parameters. (RO)
 ├── Simulink                    <- Simulink models (HW)
 ├── Results         
 │   └── figures                 <- Figures for the manuscript or documentation (PG)
