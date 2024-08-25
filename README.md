@@ -34,7 +34,7 @@ run '[Compare.m](Validation/compare.m)'  to see the validation of LoFT against O
 
 Please refer to '[Documentation.docx](Documentation.docx)' for more details.
 
-## Project organization
+## Project Organization
 - PG = project-generated
 - HW = human-writable
 - RO = read only
