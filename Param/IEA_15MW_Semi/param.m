@@ -9,11 +9,11 @@ load('IEA15MW_UMaineSemi.mat')
 
 %% Basic properties
 LoFT.Property.pitchinertia = 4.3716497074*1e10 -1.0662*1e10;
-LoFT.Property.masstot = 20093000*1.1;
+LoFT.Property.masstot = 20095000*1.0;
 LoFT.Property.rotorinertia = 3.524605*1e8;
-LoFT.Property.volume = 20075*1.1;
+LoFT.Property.volume = 20075*1.0;
 
-%% hydrostatic stiffness calcaulated by WAMIT. Parameters from IEA-15-240-RWT-UMaineSemi.hst and Raft
+%% hydrostatic stiffness calcaulated by WAMIT. Parameters from IEA-15-240-RWT-UMaineSemi.hst 
 LoFT.Hydro.hydrostatic = [  0         0	      0        ;
                        0	     445087	  406.1    ;
                        0	     406.1	  2.35*1e9];
@@ -21,7 +21,8 @@ LoFT.Hydro.hydrostatic = [  0         0	      0        ;
 %% hydrodynamics : 1. radiation force 2. diffraction and F-K force(or summarized in excitation force) 3.viscious drag
 
 % The radiation force is represented as "constant matrix". This trick
-% was verified in a phd thesis [3] from the University of Stuttgart.
+% was verified in a phd thesis [3] from the University of Stuttgart. The
+% equal damping is alse extracted.
 LoFT.Hydro.radiationaddedmass = [9720059.64789761	3234.24299945601	38802848.7423526
                             3763.25487325177	24808385.7041384	19207.7047974771
                             37917223.2319183	29235.2966715385	10662242324.1696];
@@ -36,7 +37,7 @@ LoFT.Hydro.radiationaddedmass = [9720059.64789761 3234.24299945601	38802848.7423
                             3763.25487325177	24808385.7041384	19207.7047974771
                             37917223.2319183	29235.2966715385	0];
 
-% The linear wave excitation force is caculated in-prior using WECsim,
+% The linear wave excitation force is caculated in-prior,
 % ignoring phase shifting caused by platform surge/sway.
 
 
@@ -46,12 +47,9 @@ LoFT.Hydro.viscious = [923000	     0	     -8920000;
                   0	             2300000	0
                   -8920000	     0	     16800000000];
 
-
-
-
 %% Mooring parameters.
-% The mooring look-up table can be generated from Moordyn[4]. We recommand 
-% an alternative MOST[5] for a more detailed description.
+% The mooring look-up table can be generated from Moordyn[4]. We also recommand 
+% an alternative MOST[5] for a quasi-static implementation of mooring system.
 LoFT.Mooring.option = 'Look-up table from Moordyn';
 
 
@@ -59,6 +57,9 @@ LoFT.Mooring.option = 'Look-up table from Moordyn';
 % Look-up tables for azumith-averaged Cp and Ct can be generated using a
 % blade element momentum theory described in CCBlade[6]. 
 LoFT.Aero.option = 'Look-up table from CCBlade';
+LoFT.Aero.Ch = 1.63;          % height coefficient: 150m height                
+LoFT.Aero.Cs = 0.5;           % shape coefficient: cylinder
+LoFT.Aero.S =  1500;          % tower shadow: tower height × tower diameter
 
 %% references
 % [1] Coordinated control of floating offshore wind turbines for primary frequency response
