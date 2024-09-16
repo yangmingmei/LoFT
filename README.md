@@ -19,7 +19,7 @@ N.B.: This repository is still under heavy development.
      <img src="Results/Figure/wavefield.gif" height="200"/> <img src="Results/Figure/windfield.gif" height="200"/> 
 </div>
  <div align=center>
-      Fig.1 Illustration of domain randomization in a floating wind farm, with changing wind field and wave field
+      Fig.1 Illustration of domain randomization in a floating wind farm, with changing wave field (Left) and wind field (Right)
 </div>
 
 <br/>
