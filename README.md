@@ -13,16 +13,15 @@ N.B.: This repository is still under heavy development.
 
 <div align=center>
      <img src="Results/Figure/DR.jpg" height="350"/> 
-<!-- your comment goes here --></div>
+</div>
 
-<!-- your comment goes here --> <div align=center>
+<div align=center>
      <img src="Results/Figure/wavefield.gif" height="200"/> <img src="Results/Figure/windfield.gif" height="200"/> 
-<!-- your comment goes here --></div>
-<!-- your comment goes here --> <div align=center>
+</div>
+<div align=center>
       Fig.1 Illustration of domain randomization in a floating wind farm, with changing wave field (Left) and wind field (Right)
-<!-- your comment goes here --></div>
+</div>
 
-<!-- your comment goes here --><br/>
 In the future development, the coupling between platform motions and wake effect will be considered.
 
 ## Quick Use
