@@ -3,7 +3,7 @@
 % LoFT: Low-Order modelling of FOWTs For Training
 
 clear,clc
-addpath(genpath('./../LoFT v0.0'))
+addpath(genpath('./../LoFT-main'))
 
 %% Set the random seed and create the set of parameters required for this example.
 rng(20240303);  % random seed
@@ -37,7 +37,6 @@ simu.dt = 0.025;
 Out  = sim(mdl,'StopTime',num2str(500));
 save('Results\Example1.mat',"Out");
 
-%% Plot and Visualize
 
 
 

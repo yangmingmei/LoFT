@@ -3,8 +3,8 @@
 % If you run this for the first time, the compile will take some time
 % During the DRL traing, the file doesn't need to be compiled again
 % 
-clear,clc
-addpath(genpath('./../LoFT v0.0'))
+clear,clc,close all
+addpath(genpath('./../LoFT-main'))
 
 %% Set the random seed and create the set of parameters required for this example.
 % rng(20240303);
@@ -61,8 +61,9 @@ ti0 = 0.09;
 
 format longG
 
+figure(3);
 for i = 1:length(u0)
-    figure(8); scatter(X(:), Y(:), 40, (1-ws_waked(:,i)./(u0(i)*ws_corr'))*column*row, 'filled')
+    scatter(X(:), Y(:), 40, (1-ws_waked(:,i)./(u0(i)*ws_corr'))*column*row, 'filled')
     axis equal
     cb = colorbar; cb.Label.String = 'Reduction of wind speed [%]';
     title(['Free wind speed: ', num2str(u0(i)) ,' m/s. Wind direction: ' num2str(direction) '^o']); xlabel('X-coordinate [m]'); ylabel('Y-coordinate [m]')    
@@ -77,9 +78,14 @@ Communication = zeros([10,1]);
 mdl = "LoFT_Example2";
 open_system(mdl)
 simu.dt = 0.025;
-Ts = 0.025;
 Out  = sim(mdl,'StopTime',num2str(500));
 save('Results\Example2.mat',"Out");
+
+%% plot
+Tstart = 100;
+Tend = 200;
+Ts = simu.dt;
+PlotWF(Out, Tstart,Tend,Ts)
 
 
 
