@@ -5,7 +5,6 @@
 2. Faciliate the application of deep reinforcement learning in floating offshore wind farms.
 3. Enable the trained agent to generalize to full-order models in OpenFast/Fast.Farm
 
-N.B.: This repository is still under heavy development.
 
 
 ## Brief Summary
