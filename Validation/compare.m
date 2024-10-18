@@ -5,8 +5,8 @@
 load('Case1_OpenFast.mat')
 load('Case1_LoFT.mat')
 
-load('Case2_OpenFast.mat')
-load('Case2_LoFT.mat')
+% load('Case2_OpenFast.mat')
+% load('Case2_LoFT.mat')
 
 %%
 Tstart = 1;
