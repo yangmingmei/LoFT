@@ -3,7 +3,7 @@
   LoFT presents a Low-order modelling of floating offshore wind turbines (FOWTs). The main purposes are threefold:
 1. Establish the low-order modelling and fast simulations of numerous FOWTs.
 2. Faciliate the grid intergration research in floating offshore wind farms.
-3. Enable the trained agent to generalize to full-order models in [OpenFast/Fast.Farm](https://github.com/OpenFAST)
+3. Support the deep reinforcement learning training and enable the agent to generalize to full-order models in [OpenFast/Fast.Farm](https://github.com/OpenFAST)
 
 
 
