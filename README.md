@@ -3,7 +3,7 @@
   LoFT presents a Low-order modelling of floating offshore wind turbines (FOWTs). The main purposes are threefold:
 1. Establish the low-order modelling and fast simulations of numerous FOWTs.
 2. Faciliate the grid intergration research in floating offshore wind farms.
-3. Support the deep reinforcement learning training and enable the agent to generalize to full-order models in [OpenFast/Fast.Farm](https://github.com/OpenFAST)
+3. Support the deep reinforcement learning training 
 
 
 
@@ -11,7 +11,7 @@
    The basic motivation behind LoFT is to provide a tool to support the grid intergration research of floating offshore wind farms. To achieve this, we need to put computational efficiency in the first place since the grid intergration research requires simulating large amounts of FOWTs. As a result, LoFT  only reservs the degrees of freedom that notabley influence the power output of FOWTs. 
    
    
-   Moreover, to support the deep reinforcement learning training, LoFT introduces **_domain randomization_** , which is considered as the key source of robustness of a deep reinforcement learing scheme to tranfer from simulations to the real world, as shown in Fig.1. Through domain randomization, the trained agent is able to generaliza to full-order models in OpenFast.
+   Moreover, to support the deep reinforcement learning training, LoFT introduces **_domain randomization_** , which is considered as the key source of robustness of a deep reinforcement learing scheme to tranfer from simulations to the real world, as shown in Fig.1. Through domain randomization, the trained agent is able to generaliza to full-order models in [OpenFast/Fast.Farm](https://github.com/OpenFAST).
 
 <div align=center>
      <img src="Results/Figure/DR.jpg" height="350"/> 
