@@ -11,7 +11,7 @@
    The basic motivation behind LoFT is to provide a tool to support the grid intergration research of floating offshore wind farms. To achieve this, we need to put computational efficiency in the first place since the grid intergration research requires simulating large amounts of FOWTs. As a result, LoFT  only reservs the degrees of freedom that notabley influence the power output of FOWTs. 
    
    
-   Moreover, another purpose of LoFT is to support the deep reinforcement learning training. To achieve this, LoFT introduces **_domain randomization_** , which is considered as the key source of robustness of a deep reinforcement learing scheme to tranfer from simulations to the real world, as shown in Fig.1. Specifically, instead of repeating a certain scenario,
+   Moreover, another purpose of LoFT is to facilitate the deep reinforcement learning training. To achieve this, LoFT introduces **_domain randomization_** , which is considered as the key source of robustness of a deep reinforcement learing scheme to tranfer from simulations to the real world, as shown in Fig.1. Specifically, instead of repeating a certain scenario,
  domain randomization diversifies the simulation by imposing  as many sets of scenarios as possible. In this way, the domain of the simulated dynamics is enlarged so that it can fully cover the real dynamics, and the resilience of a DRL scheme against challenging environments and model mismatch is improved. Through domain randomization, the trained agent is able to generaliza to full-order models in [OpenFast/Fast.Farm](https://github.com/OpenFAST), or even the real-world wind farm
 
 <div align=center>
