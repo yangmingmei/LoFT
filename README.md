@@ -8,7 +8,7 @@
 
 
 ## Brief Summary
-   The basic motivation behind LoFT is to provide a tool to support the grid intergration research of floating offshore wind farms. To achieve this, we need to put computational efficiency in the first place since the grid intergration research requires simulating large amounts of FOWTs. As a result, LoFT  only reservs the degrees of freedom that notabley influence the power output of FOWTs. 
+   The basic motivation behind LoFT is to provide a tool to support the grid integration research of floating offshore wind farms. To achieve this, we need to put computational efficiency in the first place since the grid integration research requires simulating large amounts of FOWTs. As a result, LoFT  only reservs the degrees of freedom that notably influence the power output of FOWTs. 
    
    
    Moreover, another purpose of LoFT is to facilitate the deep reinforcement learning training. To achieve this, LoFT introduces **_domain randomization_** , which is considered as the key source of robustness of a deep reinforcement learing scheme to tranfer from simulations to the real world, as shown in Fig.1. Specifically, instead of repeating a certain scenario,
