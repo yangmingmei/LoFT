@@ -21,9 +21,7 @@
 <!-- your comment goes here <div align=center>
      <img src="Results/Figure/wavefield.gif" height="200"/> <img src="Results/Figure/windfield.gif" height="200"/> 
 </div>-->
-<div align=center>
-     <img src="Results/Figure/wavefield.gif" height="180"/> <img src="Results/Figure/windfield.gif" height="180"/> 
-</div>
+
 <div align=center>
       Fig.1 Illustration of domain randomization in a floating wind farm, with changing wave fields and wind fields
 </div>
