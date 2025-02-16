@@ -1,6 +1,6 @@
 function moor_matrix = Create_Mooring_Matrix()
 %% Function to compute mooring look-up table
-% This function modified is from by MOST [https://github.com/WEC-Sim/WEC-Sim_Applications/tree/main/MOST]
+% This function is modified from by MOST [https://github.com/WEC-Sim/WEC-Sim_Applications/tree/main/MOST]
 % citation:
 % @inproceedings{sirigu2022development,
 %   title={Development of MOST, a fast simulation model for optimisation of floating offshore wind turbines in Simscape Multibody},

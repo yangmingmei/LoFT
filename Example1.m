@@ -10,9 +10,10 @@ rng(20240303);  % random seed
 param;          % default 
 
 % Generate wind field
-U0 = 12;         % mean wind speed
+U0 = [15,13,11,7,5]';         % mean wind speed
 I0 = 5;         % tubulence intensity
-Turbwind = GenerateTurb5(U0,I0);
+
+Turbwind = GenerateTurbWF(U0,I0);
 
 %% Generate wave disturbances
 % This part will be released after the paper is acccepted
@@ -20,6 +21,7 @@ Turbwind = GenerateTurb5(U0,I0);
 
 %% Generate Mooring Matrix (in different water depth，mooring length and archor radius)
 % This part will be released after the paper is acccepted
+
 
 
 %% Communication Failures 

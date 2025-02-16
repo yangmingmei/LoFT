@@ -14,7 +14,15 @@ column = 10;
 row = 7;
 D = 240;  % rotor diameter(m)
 
-[X,Y] = meshgrid((0:column-1)*D*6, (0:row-1)*D*4);
+[X,Y] = meshgrid((0:column-1)*D*8, (0:row-1)*D*4.5);
+
+for jj = 1:1:10
+    Y(:,jj) = Y(:,jj)+ (jj-1)*2.25*D;
+end
+
+for jj = 1:1:7
+    X(jj,:) = X(jj,:)  + (jj-1)*1*D;
+end
 
 figure; plot(X(:),Y(:),'o')
 axis equal
@@ -46,13 +54,13 @@ hub_height = 145*ones(1,column*row);
 
 u0 = 10; 
 nu0 = length(u0);
-z0 = 90;
+z0 = 145;
 
 direction = 60; 
 
 ws_corr = (hub_height/z0).^0.1; 
 
-ti0 = 0.09;  
+ti0 = 0.12;  
 
 %% wake modelling 
 

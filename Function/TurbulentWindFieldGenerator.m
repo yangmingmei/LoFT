@@ -87,7 +87,8 @@ Wcomp1 = vertcat(Wcomp1{:});
 
 t = 0:dT:(N-1)*dT;
 
-Turbwind.WindVelX = U0 + Ucomp1((Ny+1)/2 * (Nz+1)/2, :);
+Turbwind.WindVelX = U0 + sum(Ucomp1,1)./(Ny*Nz);
+Turbwind.HubWind = U0 + Ucomp1((Ny+1)/2 * (Nz+1)/2, :);
 Turbwind.Time = t;
 Turbwind.U0 = U0;
 
