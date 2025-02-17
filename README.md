@@ -31,11 +31,9 @@ In the future development, the coupling between platform motions and wake effect
 ## Quick Use
 run '[Example1.m](Example1.m)' to change environment settings and simulate 5 FOWTs.
 
-run '[Example2.m](Example2.m)' to simulate 70 FOWTs considering wake effect and wave field coherence.
+run '[Example2.m](Example2.m)' to simulate 70 FOWTs considering wake effect.
 
-run '[Compare.m](Validation/compare.m)'  to see the validation of LoFT against OpenFast.
-
-Please refer to '[Documentation.pdf](Documentation.pdf)' for more details.
+Please refer to '[Documentation.pdf](Documentation.pdf)' for more details on the modelling, control, and validation in LoFT.
 
 ## Project Organization
 - PG = project-generated
