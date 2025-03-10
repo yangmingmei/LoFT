@@ -33,12 +33,12 @@ run '[Example1.m](Example1.m)' to change environment settings and simulate 5 FOW
 
 run '[Example2.m](Example2.m)' to simulate 70 FOWTs considering wake effect.
 
-run '[Example2.m](Example3.m)' to simulate 2 floating wind farms connected at IEEE 39 bus system.
+run '[Example3.m](Example3.m)' to simulate 2 floating wind farms connected at IEEE 39 bus system.
 
 Please refer to '[Documentation.pdf](Documentation.pdf)' for more details on the modelling, control, and validation in LoFT.
 
 <div align=center>
-     <img src="Results/Figure/IEEE 39 bus.png" height="350"/> 
+     <img src="Results/Figure/IEEE 39 bus.png" height="450"/> 
 </div>
 
 ## Project Organization
