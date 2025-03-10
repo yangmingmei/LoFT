@@ -40,6 +40,9 @@ Please refer to '[Documentation.pdf](Documentation.pdf)' for more details on the
 <div align=center>
      <img src="Results/Figure/IEEE 39 bus.png" height="550"/> 
 </div>
+<div align=center>
+      Fig.2 The modified IEEE 39 bus system 
+</div>
 
 ## Project Organization
 - PG = project-generated
