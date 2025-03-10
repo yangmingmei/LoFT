@@ -38,7 +38,7 @@ run '[Example3.m](Example3.m)' to simulate 2 floating wind farms connected with 
 Please refer to '[Documentation.pdf](Documentation.pdf)' for more details on the modelling, control, and validation in LoFT.
 
 <div align=center>
-     <img src="Results/Figure/IEEE 39 bus.png" height="450"/> 
+     <img src="Results/Figure/IEEE 39 bus.png" height="550"/> 
 </div>
 
 ## Project Organization
