@@ -1,4 +1,4 @@
-# LoFT v 1.0.1-alpha
+# LoFT v 1.0.2
 
   LoFT presents a Low-order modelling of floating offshore wind turbines (FOWTs)/ farms. The main purposes are threefold:
 1. Establish the low-order modelling and fast simulations of numerous FOWTs.
