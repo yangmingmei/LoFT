@@ -1,4 +1,4 @@
-# LoFT v 1.0.1-alpha
+# LoFT v 1.0.2
 
   LoFT presents a Low-order modelling of floating offshore wind turbines (FOWTs)/ farms. The main purposes are threefold:
 1. Establish the low-order modelling and fast simulations of numerous FOWTs.
@@ -33,7 +33,16 @@ run '[Example1.m](Example1.m)' to change environment settings and simulate 5 FOW
 
 run '[Example2.m](Example2.m)' to simulate 70 FOWTs considering wake effect.
 
+run '[Example3.m](Example3.m)' to simulate 2 floating wind farms connected with IEEE 39-bus system.
+
 Please refer to '[Documentation.pdf](Documentation.pdf)' for more details on the modelling, control, and validation in LoFT.
+
+<div align=center>
+     <img src="Results/Figure/IEEE 39 bus.png" height="550"/> 
+</div>
+<div align=center>
+      Fig.2 The modified IEEE 39-bus system 
+</div>
 
 ## Project Organization
 - PG = project-generated
