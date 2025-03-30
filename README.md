@@ -26,7 +26,7 @@
       Fig.1 Illustration of domain randomization in a floating wind farm, with changing wave fields and wind fields
 </div>
 
-In the future development, the dynamic coupling between platform motions and wake effect will be considered.
+We are now working hard on the documentation. In the future development, the coupling between platform motions and wake dynamics will be considered.
 
 ## Quick Use
 run '[Example1.m](Example1.m)' to change environment settings and simulate 5 FOWTs.
