@@ -1,6 +1,6 @@
 %% This example shows how to change environmental conditions simulate five FOWTs using LoFT
 % FOWTs: floating offshore wind turbines 
-% LoFT: Low-Order modelling of FOWTs For Training
+% LoFT: Low-Order modelling of Floating wind Turbines.
 
 clear,clc
 addpath(genpath('./../LoFT-main'))
@@ -10,18 +10,17 @@ rng(20240303);  % random seed
 param;          % default 
 
 % Generate wind field
-U0 = [15,13,11,7,5]';         % mean wind speed
-I0 = 5;         % tubulence intensity
+U0 = [15,13,11,7,5]';         % mean wind speed (m/s)
+I0 = 15;                      % tubulence intensity
 
 Turbwind = GenerateTurbWF(U0,I0);
 
-%% Generate wave disturbances
-% This part will be released after the paper is acccepted
-
 
 %% Generate Mooring Matrix (in different water depth，mooring length and archor radius)
-% This part will be released after the paper is acccepted
-
+water_depth = 200;
+anchor_radius = 837.6;
+mooring_length = 850; 
+LoFT.Mooring = Create_Mooring_Matrix(water_depth, anchor_radius, mooring_length);
 
 
 %% Communication Failures 

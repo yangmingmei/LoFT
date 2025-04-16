@@ -1,4 +1,4 @@
-function moor_matrix = Create_Mooring_Matrix()
+function moor_matrix = Create_Mooring_Matrix(water_depth, anchor_radius,mooring_length)
 %% Function to compute mooring look-up table
 % This function is modified from by MOST [https://github.com/WEC-Sim/WEC-Sim_Applications/tree/main/MOST]
 % citation:
@@ -17,7 +17,7 @@ if 1
 %% Line
 rho_water=1025;                                % Water density [kg/m3]
 gravity=9.80665;                               % [m/s2]
-depth=200;                                     % water depth [m]
+depth=water_depth;                             % water depth [m] default = 200m
 d=0.333;                                       % lines diameter [m]
 linear_mass_air=685;                           % linear weight in air [kg/m]
 
@@ -27,9 +27,9 @@ Data_moor.number_lines=3;                      % Number of lines (angularly equi
     
                       %x        y       z
 Data_moor.nodes=     [-58       0      -14;    % Fairlead position (first line)
-                     -837.8     0     -inf]';  % Anchor position (firt line, -inf means water depth)
+                     -anchor_radius     0     -inf]';  % Anchor position (firt line, -inf means water depth)
 
-Data_moor.L=900;                               % Lines unstretched length
+Data_moor.L=mooring_length;                               % Lines unstretched length
 
 Data_moor.EA=3.27e9;                           % Lines stiffness
 
@@ -40,11 +40,11 @@ Data_moor.HV_try=[1.361e6    2.041e6];         % Horizzontal and Vertical fairle
 
 %% Mooring matrix
 moor_matrix.X=-40:5:40;                        % Surge pozitions at which mooring loads are computed
-moor_matrix.Y=-10:5:10;                        % Sway pozitions at which mooring loads are computed
+moor_matrix.Y=-0;                              % Sway pozitions at which mooring loads are computed
 moor_matrix.Z=-15:5:15;                        % Heave pozitions at which mooring loads are computed
-moor_matrix.RX=deg2rad(-10:5:10);              % Roll rotations at which mooring loads are computed
+moor_matrix.RX=0;                              % Roll rotations at which mooring loads are computed
 moor_matrix.RY=deg2rad(-15:5:15);              % Pitch rotations at which mooring loads are computed
-moor_matrix.RZ=deg2rad(-10:5:10);              % Yaw rotations at which mooring loads are computed
+moor_matrix.RZ=0;                              % Yaw rotations at which mooring loads are computed
 
 end
 %% DATA
@@ -78,9 +78,13 @@ moor_matrix.MZ=moor_matrix.FX;
 end
 %% MOORING MATRIX
 moor_matrix = moor_matrix_6dof(moor_matrix,Data_moor);
+moor_matrix.FX = squeeze(moor_matrix.FX);
+moor_matrix.FY = squeeze(moor_matrix.FY);
+moor_matrix.FZ = squeeze(moor_matrix.FZ);
+moor_matrix.MX = squeeze(moor_matrix.MX);
+moor_matrix.MY = squeeze(moor_matrix.MY);
+moor_matrix.MZ = squeeze(moor_matrix.MZ);
 
-%% SAVE
-save('Mooring_VolturnUS15MW','moor_matrix');
 end
 
 %% FUNCTIONS
@@ -114,8 +118,6 @@ for i=1:length(moor_matrix.X)
                             F=[HV_out(m,1).*[cos(alpha);sin(alpha)];-HV_out(m,2)];
                             moor_F = moor_F + [F;
                                                cross(FairleadNotrasl,F)];
-
-
                         end
                         moor_matrix.FX(i,l,j,n,k,o)=moor_F(1);
                         moor_matrix.FY(i,l,j,n,k,o)=moor_F(2);
