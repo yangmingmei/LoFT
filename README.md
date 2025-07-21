@@ -25,7 +25,7 @@ run '[Example1.m](Example1.m)' to change environment settings and simulate 5 FOW
 
 run '[Example2.m](Example2.m)' to simulate 70 FOWTs considering wake effect.
 
-run '[Example3.m](Example3.m)' to simulate 2 floating wind farms connected with IEEE 39-bus system.
+run '[Example3.m](Example3.m)' to simulate 2 floating wind farms connected with IEEE 39-bus system, as shown in Fig. 1.
 
 Please refer to '[Documentation.pdf](Documentation.pdf)' for more details on the modelling, control, and validation in LoFT.
 
@@ -33,7 +33,7 @@ Please refer to '[Documentation.pdf](Documentation.pdf)' for more details on the
      <img src="Results/Figure/IEEE 39 bus.png" height="550"/> 
 </div>
 <div align=center>
-      Fig.2 The modified IEEE 39-bus system 
+      Fig. 1. The modified IEEE 39-bus system 
 </div>
 
 ## Project Organization
@@ -59,7 +59,7 @@ Please refer to '[Documentation.pdf](Documentation.pdf)' for more details on the
 ```
 ## Credit
 
-"Primary Frequency Response of Floating Offshore Wind Turbines via Deep Reinforcement Learning and Domain Randomization", accepted by IEEE Transactions on Sustainable Energy. [Mingyang Mei](https://scholar.google.com/citations?user=jpXmO2UAAAAJ&hl=zh-CN), Peng Kou,  [Zhihao Zhang](https://scholar.google.com/citations?hl=zh-CN&user=Qfr4gA4AAAAJ), [Yuanhang Zhang](https://scholar.google.com/citations?hl=zh-CN&user=1cSO8eAAAAAJ), Zhihang Xue, Deliang Liang (Corresponding author: [Peng Kou](https://gr.xjtu.edu.cn/en/web/koupeng))
+[1]	[M. Mei](https://scholar.google.com/citations?user=jpXmO2UAAAAJ&hl=zh-CN), [P. Kou](https://gr.xjtu.edu.cn/en/web/koupeng), [Z. Zhang](https://scholar.google.com/citations?hl=zh-CN&user=Qfr4gA4AAAAJ), [Y. Zhang](https://scholar.google.com/citations?hl=zh-CN&user=1cSO8eAAAAAJ), Z. Xue, and D. Liang, “Primary frequency response of floating offshore wind turbines via deep reinforcement learning and domain randomization,” _IEEE Trans. Sustain. Energy_, early access, Mar. 27, 2025, [doi: 10.1109/TSTE.2025.3555266](https://ieeexplore.ieee.org/document/10944502).
 
 ## Acknowledgement
 This work was supported by the National Natural Science Foundation of China under Grant 52077165. (Principle investigator: [Peng Kou](https://gr.xjtu.edu.cn/en/web/koupeng))
